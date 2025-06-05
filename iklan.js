@@ -36,9 +36,9 @@
 
   // Atur timer untuk setiap 5 menit (300000 ms)
   setInterval(tampilkanIklan, 300000); // 5 menit
-</script>
 
-<script>
+
+
   // Tunggu sampai DOM siap
   document.addEventListener("DOMContentLoaded", function () {
     const videoContainer = document.querySelector(".anime-video-container");
