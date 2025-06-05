@@ -1,20 +1,18 @@
-<style>
-  .anime-video-container {
+.anime-video-container {
     position: relative;
     width: 100%;
     height: 400px;
-    margin-bottom: 20px;
   }
 
   .anime-video-container img {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    z-index: 2;
-    border-radius: 4px;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    z-index: 1; /* Pastikan logo tetap di atas iframe */
   }
 
+  /* Responsif untuk iframe */ 
   .anime-video-container iframe {
     width: 100%;
     height: 100%;
@@ -22,84 +20,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
   }
 
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 20px auto;
-    max-width: 800px;
-    position: relative;
-  }
-
-  .nav-button {
-    background-color: #800000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .download-button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #000;
-    color: #fff;
-    padding: 6px 14px;
-    font-size: 13px;
-    border-radius: 6px;
-    text-decoration: none;
-    z-index: 2;
-  }
-
-  .anime-container {
-    display: flex;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-
-  .anime-container img {
-    width: 250px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 20px;
-    flex-shrink: 0;
-  }
-
-  .anime-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .anime-info p {
-    margin: 4px 0;
-  }
-
-  .highlight {
-    background-color: #555;
-    padding: 10px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
+  /* Responsif untuk tampilan mobile */
   @media screen and (max-width: 768px) {
     .anime-container {
       flex-direction: column;
@@ -109,29 +32,53 @@
 
     .anime-container img {
       width: 100%;
-      max-width: 300px;
-      margin-bottom: 15px;
+      max-width: 250px; /* Ukuran maksimal gambar agar tidak terlalu besar di perangkat kecil */
+      margin-right: 0;
+      margin-bottom: 10px;
     }
 
     .anime-info {
       text-align: center;
     }
 
-    .navigation {
-      flex-direction: column;
-      gap: 10px;
-      padding: 15px;
+    .highlight {
+      font-size: 1.2em;
     }
 
-    .download-button {
-      position: relative;
-      transform: none;
-      margin: 10px 0;
+    .navigation {
+      padding: 20px 0; /* Mengurangi padding agar tombol lebih proporsional */
+      justify-content: center; /* Memastikan tombol tetap di tengah */
+      align-items: center;
+      flex-wrap: wrap; /* Menjaga tombol tetap dalam satu baris pada perangkat kecil */
     }
 
     .nav-button {
-      width: 100%;
-      text-align: center;
+      font-size: 14px; /* Mengurangi ukuran font untuk tombol pada perangkat kecil */
+      padding: 8px 16px;
+      margin: 5px; /* Memberikan jarak antar tombol */
+    }
+
+    .download-button {
+      font-size: 12px;
+      padding: 5px 10px;
+      margin-top: 10px; /* Memberikan jarak antara tombol download dan tombol lainnya */
+    }
+
+    .nav-center {
+      font-size: 16px;
+      font-weight: bold;
     }
   }
-</style>
+
+  /* Untuk menghindari ukuran tombol yang terlalu besar pada perangkat kecil */
+  @media screen and (max-width: 480px) {
+    .nav-button {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+
+    .download-button {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  }
