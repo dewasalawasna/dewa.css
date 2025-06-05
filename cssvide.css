@@ -1,0 +1,61 @@
+  .anime-container {
+    display: flex;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    flex-wrap: wrap; /* Membuat elemen gambar dan info fleksibel pada layar kecil */
+  }
+
+  .anime-container img {
+    width: 250px; /* Ukuran gambar */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Agar gambar tidak mengecil terlalu kecil */
+  }
+
+  .anime-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Agar info mengisi ruang sisa */
+  }
+
+  .anime-info p {
+    margin: 5px 0;
+  }
+
+  .highlight {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Responsif untuk tampilan mobile */
+  @media screen and (max-width: 768px) {
+    .anime-container {
+      flex-direction: column; /* Mengubah menjadi kolom pada layar kecil */
+      align-items: center; /* Menyusun elemen secara terpusat */
+      padding: 10px;
+    }
+
+    .anime-container img {
+      width: 100%; /* Mengubah gambar agar responsif */
+      margin-right: 0; /* Menghapus margin kanan gambar */
+      margin-bottom: 10px; /* Menambah jarak bawah gambar */
+    }
+
+    .anime-info {
+      text-align: center; /* Memusatkan teks pada info anime */
+    }
+
+    .highlight {
+      font-size: 1.2em; /* Membesarkan font highlight */
+    }
+  }
