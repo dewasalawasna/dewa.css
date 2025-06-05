@@ -1,4 +1,4 @@
-<script>
+
   // Buat elemen video iklan
   const iklanVideo = document.createElement('video');
   iklanVideo.src = "https://vps.carikode.com/video/iklan.mp4";
@@ -61,4 +61,4 @@
     // Tambahkan watermark ke dalam container video
     videoContainer.appendChild(watermark);
   });
-</script>
+
