@@ -1,6 +1,6 @@
 .anime-container {
   display: flex;
-  background-color: #4a4a4a; /* Warna abu-abu agak cerah tapi tetap gelap */
+  background:linear-gradient(135deg, #b30000, #000000);
   padding: 20px;
   border-radius: 8px;
   max-width: 1000px;
