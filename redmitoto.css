@@ -1,0 +1,167 @@
+.blog-sidebar .nav.menu > li > a > i {
+    padding-right: 10px;
+    background: linear-gradient(#eee704, #f0c701);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.blog-sidebar .nav.menu > li > a:hover > i {
+    transform: scale(1.1);
+}
+
+/* LINK utama — aman, rapi, tetap elegan */
+.blog-sidebar .nav.menu > li > a {
+    color: #FFD700;
+    padding: 12px 18px;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #3d0000, #7a0000);
+    border: 1px solid #a77900;
+    border-radius: 14px;
+    margin-bottom: 8px;
+    display: block;
+    box-shadow: 0 2px 6px rgba(255, 215, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.blog-sidebar .nav.menu > li > a:hover {
+    background: linear-gradient(to bottom, #8b0000, #aa1c1c);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+.results {
+    background: linear-gradient(to bottom, #3d0000, #7a0000);
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    color: #fd8d00;
+    border: 1px solid #fd8d00;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(253, 141, 0, 0.15);
+}
+
+/* Optional: Hover effect biar lebih hidup */
+.results:hover {
+    background: linear-gradient(to bottom, rgba(70, 0, 0, 0.9), rgba(40, 0, 0, 0.85));
+    box-shadow: 0 4px 10px rgba(253, 141, 0, 0.3);
+}
+
+.btn.btn-theme {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #FFD700;
+    background: linear-gradient(to bottom, #3d0000, #7a0000);
+    border: 1px solid #a77900;
+    border-radius: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    /* Bersihkan white line dan hanya gunakan warm glow */
+    box-shadow:
+        inset 0 -3px 6px rgba(253, 141, 0, 0.25),
+        0 2px 6px rgba(253, 141, 0, 0.15); /* glow emas */
+}
+
+/* Garis bawah glowing - tanpakan elegan */
+.btn.btn-theme::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: radial-gradient(ellipse at center, #fd8d00 0%, rgba(253, 141, 0, 0.1) 80%);
+    border-radius: 2px;
+    opacity: 0.9;
+    box-shadow:
+        0 0 6px #fd8d00,
+        0 0 12px rgba(253, 141, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Hover efek: tanpa putih */
+.btn.btn-theme:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        inset 0 -3px 8px rgba(253, 141, 0, 0.35),
+        0 6px 14px rgba(252, 138, 0, 0.2);
+}
+
+.btn.btn-theme:hover::after {
+    width: 70%;
+    height: 4px;
+    box-shadow:
+        0 0 10px #fd8d00,
+        0 0 20px rgba(253, 141, 0, 0.5);
+}
+
+.button.btn-theme, .btn.btn-theme {
+    background: linear-gradient(to bottom, #3d0000, #7a0000);
+    background: linear-gradient(to bottom, #3d0000, #7a0000);
+    background: linear-gradient(to bottom, #3d0000, #7a0000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffde00', endColorstr='#b36e00', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    color: #FFD700;
+    border: 1px solid #fd8d00 !important;
+    border-width: 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    /* box-shadow: inset 0 -3px 0 #fd8d00; */
+    font-weight: 600;
+    padding: 8px 12px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.news-detail {
+    background: linear-gradient(to bottom, #3d0000, #7a0000) !important ;
+        border: 1px solid #fd8d00 !important;
+
+}
+.results h4 { 
+  color : #FFD700 ;
+ 
+}
+.news-head {
+    background: linear-gradient(to bottom, #3d0000, #7a0000) !important ;
+    border-radius: 1px 1px 1px 50px;
+    border: 1px solid #fd8d00 !important;
+}
+
+.navbar-fixed-top {
+  background: linear-gradient(to bottom, #3d0000, #7a0000) !important ;
+  border: 1px solid #fd8d00 !important;
+  border-bottom : 120px;
+}
+
+.news-head > h5  {
+  color : #FFD700 ;
+}
+
+.bank {
+    width: 145px;
+    height: 50px;
+    padding: 12px 10px 10px 10px;
+    background: linear-gradient(to bottom, #3d0000, #7a0000) !important ;
+    border: 1px solid #fd8d00;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
