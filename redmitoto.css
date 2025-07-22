@@ -1,4 +1,4 @@
-.blog-sidebar .nav.menu > li > a > i {
+        .blog-sidebar .nav.menu > li > a > i {
     padding-right: 10px;
     background: linear-gradient(#eee704, #f0c701);
     -webkit-background-clip: text;
@@ -209,3 +209,104 @@ form .form-control:focus {
   box-shadow: 0 6px 16px rgba(253, 141, 0, 0.6), 0 0 20px rgba(255, 165, 0, 0.3);
   transform: scale(1.03);
 }
+
+
+footer#footer {
+  background: none !important;
+  background-color: transparent !important;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  border-top: 5px solid #ff9900;
+  box-shadow: none;
+  text-align: center;
+}
+
+
+footer#footer a {
+  color: #ffcc70;
+  text-decoration: none;
+  padding: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer#footer a:hover {
+  color: #ffffffff;
+}
+
+footer#footer .footer-main .container {
+  background: rgba(2, 0, 0, 0.67); /* semu merah gelap transparan */
+  padding: 20px;
+  display: inline-block;
+  box-shadow: inset 0 0 10px rgba(255, 80, 0, 0.2);
+  margin-bottom: 40px; /* tambahkan ruang bawah jika perlu */
+  position: relative;
+  top: -40px; /* naikkan ke atas */
+}
+
+.news-body {
+  background: linear-gradient(135deg, #ff4500, #ff9900, #ffd700);
+  height: 35px;
+  overflow: hidden;
+
+  /* Hanya border radius di sisi kanan */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+ul.newsticker > li > a {
+    color: #ffffff;
+    font-weight: bold;
+}
+body {
+    background: url(https://i.postimg.cc/dVGJXPJr/dsdfsd.png) center no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: top;
+    background-size: cover !important;
+}
+
+footer#footer h1, footer#footer h2, footer#footer h3, 
+footer#footer h4, footer#footer h5, footer#footer h6,
+footer#footer .h1, footer#footer .h2, footer#footer .h3, 
+footer#footer .h4, footer#footer .h5, footer#footer .h6 {
+  background: linear-gradient(135deg, #ffcc00, #ffcc00, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(255, 80, 0, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 10px 0;
+  letter-spacing: 0.5px;
+}
+
+
+
+p {
+  color: #ffcc00 !important; /* Kuning lembut */
+  font-size: 80px;           /* Ukuran sedikit lebih besar dari default */
+  font-weight: 600;          /* Tebal, tapi tidak terlalu berat */
+  line-height: 1.8;          /* Jarak antar baris lebih lega */
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  color: #ffcc00 !important; /* Kuning lembut */
+  font-weight: 700 !important; /* Bold */
+}
+footer#footer .footer-bottom {
+  padding: 10px 0; /* Lebih kecil dari sebelumnya */
+  background: linear-gradient(135deg, #ff0000, #ff6a00, #ffcc00);
+  font-size: 13px;
+  font-weight: 700;
+  color: #000000ff;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 5px #ff4d00, 0 0 10px #ff9900;
+  box-shadow: inset 0 0 10px rgba(255, 80, 0, 0.3);
+  line-height: 1.4;
+}
+
+
